@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login with Google</title>
+    <link rel="stylesheet" href="./styles/loginPageStyle.css" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login with Google</h2>
+
+      <div
+        id="g_id_onload"
+        data-client_id="991568131895-m2hgsn2iu42618g4lkeh80l408pat8aj.apps.googleusercontent.com"
+        data-callback="handleCredentialResponse"
+      ></div>
+
+      <div class="g_id_signin" data-type="standard"></div>
+    </div>
+
+    <script src="./scripts/loginPageScript.js"></script>
+  </body>
+</html>

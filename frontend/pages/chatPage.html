@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="../styles/chatPageStyle.css" />
+  </head>
+
+  <body>
+    <h2 id="username">Logged in as</h2>
+
+    <div id="chat-container">
+      <div id="chat-header">
+        <img id="bot-avatar" src="" alt="Bot" />
+        <span id="bot-name">ChatBot</span>
+      </div>
+      <div id="messages"></div>
+      <p id="typing-indicator">ChatBot is typing...</p>
+      <div id="input-container">
+        <input
+          type="text"
+          id="chat-input"
+          placeholder="Type a message..."
+          onkeypress="handleKeyPress(event)"
+        />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+    <script src="../scripts/chatPageScript.js"></script>
+  </body>
+</html>
